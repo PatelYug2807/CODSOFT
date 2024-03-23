@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Daily Quotes</string>
+    <string name="namor1">Only the most broken people can be great leaders</string>
+    <string name="batman1">These scars we have make us who we are we are not meant to go back and fix them</string>
+    <string name="ironman1">Don\'t let someone who has nothing tell you how to do anything</string>
+    <string name="ironman2"> UNITY ISN’T ABOUT BEING THE SAME. IT’S ABOUT WORKING TOGETHER</string>
+    <string name="thor1">A wise king never seek out for war but he must always be ready for it</string>
+    <string name="hulk1">Patience in a time of anger saves you hundred moments of regrets</string>
+    <string name="superman1">We only come to know the true power of evil when we work to suppress it in ourselves </string>
+    <string name="wonderwoman1">Sometimes you cannot see what you are learning until you come out the other side</string>
+    <string name="flash">Teaching is a lot more than just doing something and expecting you to follow</string>
+    <string name="aquaman1">One of the best lessons you can learn in life is to master how to remain calm </string>
+    <string name="captian1">A single individual who has right heart and the right mind that is consumed by a single purpose.. That one man can win the war</string>
+    <string name="title_activity_main2">MainActivity2</string>
+</resources>
