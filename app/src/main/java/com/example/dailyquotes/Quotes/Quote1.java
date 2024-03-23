@@ -23,7 +23,7 @@ public class Quote1 extends AppCompatActivity implements SwipeRefreshLayout.OnRe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quote1);
 
-        share = findViewById(R.id.ironmanshare);
+        share = findViewById(R.id.share);
         quote = findViewById(R.id.ironmanshare1);
         swipe = findViewById(R.id.swipe1);
         name=findViewById(R.id.IronMan);
@@ -35,7 +35,7 @@ public class Quote1 extends AppCompatActivity implements SwipeRefreshLayout.OnRe
                 Intent shareIntent = new Intent();
                 shareIntent.setAction(Intent.ACTION_SEND);
                 shareIntent.setType("text/plain");
-                shareIntent.putExtra(Intent.EXTRA_TEXT,"Quote by "+name.getText().toString()+" is- "+quote.getText().toString());
+                shareIntent.putExtra(Intent.EXTRA_TEXT,"Quote by "+name.getText().toString()+" is- *"+quote.getText().toString()+"*");
                 startActivity(shareIntent);
             }
         });

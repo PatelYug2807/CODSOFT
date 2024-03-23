@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/actbg"
     android:orientation="vertical"
-    tools:context=".Quotes.Quote2">
+    tools:context=".Quotes.Quote6">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
                 android:paddingTop="2dp"
                 android:paddingBottom="2dp"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/captian" />
+                app:srcCompat="@drawable/spiderman" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -43,7 +43,7 @@
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:paddingTop="2dp"
-                    android:text="Captian America"
+                    android:text="Spider-Man"
                     android:textColor="@color/black"
                     android:textSize="30dp" />
 
@@ -64,11 +64,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
                     android:fontFamily="serif-monospace"
-                    android:text="@string/captian1"
+                    android:text="@string/spiderman"
                     android:textColor="@color/black"
                     android:textSize="30sp" />
-
-
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -89,7 +87,6 @@
                     android:textColor="@color/black"
                     android:textSize="25sp" />
             </LinearLayout>
-
 
         </LinearLayout>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.example.dailyquotes.R;
 import com.example.dailyquotes.RandomClass;
 
-public class Quote2 extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
+public class Quote13 extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
     TextView quote,name;
     Button share;
@@ -20,7 +20,7 @@ public class Quote2 extends AppCompatActivity implements SwipeRefreshLayout.OnRe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quote2);
+        setContentView(R.layout.activity_quote13);
 
         share = findViewById(R.id.share);
         quote = findViewById(R.id.quote);

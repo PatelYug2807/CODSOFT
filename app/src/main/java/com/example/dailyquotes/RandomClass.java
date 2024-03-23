@@ -9,18 +9,19 @@ public class RandomClass {
     private static final String[] ACTIVITY_CLASSES = {
             "com.example.dailyquotes.Quotes.Quote1",
             "com.example.dailyquotes.Quotes.Quote2",
-//            "com.example.dailyquotes.Quote3",
-//            "com.example.dailyquotes.Quote4",
-//            "com.example.dailyquotes.Quote5",
-//            "com.example.dailyquotes.Quote6",
-//            "com.example.dailyquotes.Quote7",
-//            "com.example.dailyquotes.Quote8",
-//            "com.example.dailyquotes.Quote9",
-//            "com.example.dailyquotes.Quote10",
-//            "com.example.dailyquotes.Quote11",
-//            "com.example.dailyquotes.Quote12",
-//            "com.example.dailyquotes.Quote13",
-//            "com.example.dailyquotes.Quote14"
+            "com.example.dailyquotes.Quotes.Quote3",
+            "com.example.dailyquotes.Quotes.Quote4",
+            "com.example.dailyquotes.Quotes.Quote5",
+            "com.example.dailyquotes.Quotes.Quote5",
+            "com.example.dailyquotes.Quotes.Quote6",
+            "com.example.dailyquotes.Quotes.Quote7",
+            "com.example.dailyquotes.Quotes.Quote8",
+            "com.example.dailyquotes.Quotes.Quote9",
+            "com.example.dailyquotes.Quotes.Quote10",
+            "com.example.dailyquotes.Quotes.Quote11",
+            "com.example.dailyquotes.Quotes.Quote12",
+            "com.example.dailyquotes.Quotes.Quote13",
+            "com.example.dailyquotes.Quotes.Quote14"
 
 
     };
