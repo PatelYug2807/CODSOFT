@@ -6,14 +6,17 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.example.dailyquotes.RandomClass.*;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
     SwipeRefreshLayout swipe;
-    RandomClass r1=new RandomClass();
+    RandomClass r1 = new RandomClass();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         Toolbar tb = findViewById(R.id.toolbar);
         setSupportActionBar(tb);
 
-        Fragment f1 =r1.randomFrag();
+        Fragment f1 = r1.randomFrag();
         getSupportFragmentManager().beginTransaction().replace(R.id.frag1, f1).commit();
     }
 
@@ -36,8 +39,18 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        Toast.makeText(getApplicationContext(), "Favorites", Toast.LENGTH_LONG).show();
-        return true;
+        int id = item.getItemId();
+        if (id == R.id.fav) {
+            try {
+                Toast.makeText(MainActivity.this, "Favorites", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(MainActivity.this, Favroites.class));
+                return true;
+            } catch (Exception e) {
+                e.printStackTrace();
+                Log.e("MainActivity", "Error starting FavoritesActivity", e);
+            }
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -47,3 +60,5 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         swipe.setRefreshing(false);
     }
 }
+
+

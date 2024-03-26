@@ -13,6 +13,9 @@
         android:theme="@style/Theme.DailyQuotes"
         tools:targetApi="31">
         <activity
+            android:name=".Favroites"
+            android:exported="false" />
+        <activity
             android:name=".Quotes.Quote14"
             android:exported="false" />
         <activity
