@@ -13,4 +13,6 @@
     <string name="captian1">A single individual who has right heart and the right mind that is consumed by a single purpose.. That one man can win the war</string>
     <string name="spiderman">Sometimes to do what\'s right,we have to give up the things we want the most.Even our dreams</string>
     <string name="blackpanther"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

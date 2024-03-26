@@ -42,7 +42,7 @@ public class Quote12 extends AppCompatActivity implements SwipeRefreshLayout.OnR
 
     @Override
     public void onRefresh() {
-        RandomClass.startRandomActivity( this);
+//        RandomClass.startRandomActivity( this);
         swipe.setRefreshing(false);
     }
 

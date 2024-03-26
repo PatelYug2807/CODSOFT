@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/actbg"
     android:orientation="vertical"
-    tools:context=".Quotes.Quote2">
+    android:layout_marginTop="56dp"
+    tools:context=".Quotes.FragQuote2">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
@@ -21,7 +22,6 @@
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
                 android:layout_height="234dp"
-                android:paddingTop="2dp"
                 android:paddingBottom="2dp"
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/captian" />
