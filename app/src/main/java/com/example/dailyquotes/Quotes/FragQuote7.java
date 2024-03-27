@@ -23,7 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 
-public class FragQuote2 extends Fragment{
+public class FragQuote7 extends Fragment{
     FirebaseDatabase database=FirebaseDatabase.getInstance();
     TextView quote, name;
     Button share,fav;
@@ -34,11 +34,13 @@ public class FragQuote2 extends Fragment{
 
     //Initializing Variables
     {
-        View view = inflater.inflate(R.layout.fragment_frag_quote2, container, false);
+        View view = inflater.inflate(R.layout.fragment_frag_quote7, container, false);
         share = view.findViewById(R.id.share);
         quote = view.findViewById(R.id.quote);
         name = view.findViewById(R.id.name);
         fav=view.findViewById(R.id.fav);
+
+        //checking if there it is favorite or not
         database.getReference("Fav").child(name.getText().toString()).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -90,7 +92,7 @@ public class FragQuote2 extends Fragment{
                         {
                             Toast.makeText(getContext(),"Added to Favorites",Toast.LENGTH_SHORT).show();
                             fav.setText("Remove");
-                            database.getReference().child("Fav").child(name.getText().toString()).setValue(new RCModel(R.drawable.captian,name.getText().toString(),quote.getText().toString()));
+                            database.getReference().child("Fav").child(name.getText().toString()).setValue(new RCModel(R.drawable.drstrange,name.getText().toString(),quote.getText().toString()));
 
                         }
                     }

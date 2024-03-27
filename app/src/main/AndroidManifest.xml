@@ -15,56 +15,11 @@
         <activity
             android:name=".Demo"
             android:exported="false" />
-        <activity
-            android:name=".t"
-            android:exported="false"
-            android:label="@string/title_activity_t"
-            android:theme="@style/Theme.DailyQuotes" />
+
         <activity
             android:name=".Favroites"
             android:exported="false" />
-        <activity
-            android:name=".Quotes.Quote14"
-            android:exported="false" />
-        <activity
-            android:name=".Quotes.Quote13"
-            android:exported="false" />
-        <activity
-            android:name=".Quotes.Quote12"
-            android:exported="false" />
-        <activity
-            android:name=".Quotes.Quote11"
-            android:exported="false" />
-        <activity
-            android:name=".Quotes.Quote10"
-            android:exported="false" />
-        <activity
-            android:name=".Quotes.Quote9"
-            android:exported="false" />
-        <activity
-            android:name=".Quotes.Quote8"
-            android:exported="false" />
-        <activity
-            android:name=".Quotes.Quote7"
-            android:exported="false" />
-        <activity
-            android:name=".Quotes.Quote6"
-            android:exported="false" />
-        <activity
-            android:name=".Quotes.Quote5"
-            android:exported="false" />
-        <activity
-            android:name=".Quotes.Quote4"
-            android:exported="false" />
-        <activity
-            android:name=".Quotes.Quote3"
-            android:exported="false" />
-        <activity
-            android:name=".Quotes.Quote2"
-            android:exported="false" />
-        <activity
-            android:name=".Quotes.Quote1"
-            android:exported="false" />
+
         <activity
             android:name=".SplashActivity"
             android:exported="true">

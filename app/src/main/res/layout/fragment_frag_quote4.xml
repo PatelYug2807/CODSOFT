@@ -19,7 +19,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/namor"
+                android:id="@+id/img"
                 android:layout_width="match_parent"
                 android:layout_height="234dp"
                 android:paddingBottom="2dp"
@@ -103,7 +103,7 @@
                     android:layout_gravity="bottom"
                     android:fontFamily="@font/nothingfont"
                     android:background="@drawable/sharebtn"
-                    android:text="favroites"
+                    android:text=""
                     android:textStyle="bold"
                     android:drawableLeft="@drawable/favorite"
                     android:paddingLeft="10dp"

@@ -8,13 +8,7 @@ public class RCModel implements Serializable {
     private String name;
     private String quote;
 
-    public String getQuote() {
-        return quote;
-    }
 
-    public void setQuote(String quote) {
-        this.quote = quote;
-    }
 
     public  RCModel()
     {
@@ -41,5 +35,12 @@ public class RCModel implements Serializable {
     public void getImg(int img)
     {
         this.img=img;
+    }
+    public String getQuote() {
+        return quote;
+    }
+
+    public void setQuote(String quote) {
+        this.quote = quote;
     }
 }
