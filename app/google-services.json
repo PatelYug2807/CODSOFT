@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "951617291102",
+    "project_id": "quote-b8be2",
+    "storage_bucket": "quote-b8be2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951617291102:android:889063084cbd08d08085cf",
+        "android_client_info": {
+          "package_name": "com.example.dailyquotes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjZx6R52yAMNVOk8Fg8f-dWgY1CfMs2Es"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

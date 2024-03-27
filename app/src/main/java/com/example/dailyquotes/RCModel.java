@@ -6,6 +6,10 @@ import java.sql.Struct;
 public class RCModel implements Serializable {
     private int img;
     private String name;
+    public  RCModel()
+    {
+
+    }
     public RCModel(int img, String name)
     {
         this.name=name;

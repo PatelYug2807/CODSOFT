@@ -20,7 +20,7 @@ public class RandomClass {
 
     public  Fragment randomFrag() {
         fragmentList.add(new FragQuote1());
-//        fragmentList.add(new FragQuote2());
+        fragmentList.add(new FragQuote2());
 //        fragmentList.add(new FragQuote3());
 //        fragmentList.add(new FragQuote4());
 //        fragmentList.add(new FragQuote5());

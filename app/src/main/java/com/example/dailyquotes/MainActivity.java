@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.example.dailyquotes.RandomClass.*;
+import com.google.firebase.FirebaseApp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+//        FirebaseApp.initializeApp(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         swipe = findViewById(R.id.swipe1);
@@ -42,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         int id = item.getItemId();
         if (id == R.id.fav) {
             try {
-                Toast.makeText(MainActivity.this, "Favorites", Toast.LENGTH_LONG).show();
+//                Toast.makeText(MainActivity.this, "Favorites", Toast.LENGTH_LONG).show();
                 startActivity(new Intent(MainActivity.this, Favroites.class));
                 return true;
             } catch (Exception e) {

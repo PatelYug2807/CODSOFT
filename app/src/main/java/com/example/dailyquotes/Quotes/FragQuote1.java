@@ -18,6 +18,7 @@ import com.example.dailyquotes.AdapterRc;
 import com.example.dailyquotes.Favroites;
 import com.example.dailyquotes.R;
 import com.example.dailyquotes.RCModel;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
@@ -27,15 +28,25 @@ public class FragQuote1 extends Fragment{
     Button share,fav;
     ImageView iv;
 
+    //Creating DB connection
+    FirebaseDatabase database=FirebaseDatabase.getInstance();
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_frag_quote1, container, false);
+
+        //Finding ID's
+
         share = view.findViewById(R.id.share);
         quote = view.findViewById(R.id.ironmanshare1);
         iv=view.findViewById(R.id.ironImg);
         name = view.findViewById(R.id.IronMan);
+        fav=view.findViewById(R.id.fav);
+
+        //Creating onClickListener on share btn
+
         share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,24 +58,20 @@ public class FragQuote1 extends Fragment{
             }
         });
 
-        fav=view.findViewById(R.id.fav);
+        //Adding Favroites
+
         fav.setOnClickListener(new View.OnClickListener() {
-            int count=0;
+
             @Override
             public void onClick(View v) {
-//               if(count==0)
-               {
-                   Toast.makeText(getContext(),"Added to Favorites",Toast.LENGTH_LONG).show();
-                   ArrayList<RCModel> arr=new ArrayList<>();
-                   arr.add(new RCModel(R.drawable.ironman,name.getText().toString()));
-                   Intent i=new Intent(getActivity(), Favroites.class);
-                   i.putExtra("favArr",arr);
-                   startActivity(i);
-                   count++;
-               }
+
+                {
+                        database.getReference().child("Fav").child("Iron").setValue(new RCModel(R.drawable.ironman,name.getText().toString()));
+                }
 
             }
         });
+
         return view;
     }
 
