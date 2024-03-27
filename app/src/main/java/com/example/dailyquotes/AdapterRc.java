@@ -39,53 +39,64 @@ public  class AdapterRc extends RecyclerView.Adapter<AdapterRc.viewHolder>
                 holder.iv.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                       switch (rc.getName())
-                       {
-                           case "IronMan":
-                           {
-                               Intent i=new Intent(c, Demo.class);
-                               i.putExtra("name",rc.getName());
-                               i.putExtra("pic",rc.getImg());
-                               c.startActivity(i);
-                               break;
-
-                           }
-                           case "Captian America":
-                           {
-                               Intent i=new Intent(c, Demo.class);
-                               i.putExtra("name",rc.getName());
-                               c.startActivity(i);
-                               break;
-                           }
-                           case "Hulk":
-                           {
-                               Intent i=new Intent(c, Demo.class);
-                               i.putExtra("name",rc.getName());
-                               c.startActivity(i);
-                               break;
-                           }
-                           case "Namor":
-                           {
-                               Intent i=new Intent(c, Demo.class);
-                               i.putExtra("name",rc.getName());
-                               c.startActivity(i);
-                               break;
-                           }
-                           case "SpiderMan":
-                           {
-                               Intent i=new Intent(c, Demo.class);
-                               i.putExtra("name",rc.getName());
-                               c.startActivity(i);
-                               break;
-                           }
-                           default:
-                               break;
-
-
-                       }
-
+//                       switch (rc.getName())
+//                       {
+//                           case "IronMan":
+//                           {
+                        Intent i = new Intent(c, Demo.class);
+                        i.putExtra("name", rc.getName());
+                        i.putExtra("pic", rc.getImg());
+                        i.putExtra("quote", rc.getQuote());
+                        c.startActivity(i);
+//                               break;
+//
+//                           }
+//                           case "Captian America":
+//                           {
+//                               Intent i=new Intent(c, Demo.class);
+//                               i.putExtra("name",rc.getName());
+//                               i.putExtra("pic",rc.getImg());
+//                               i.putExtra("quote",rc.getQuote());
+//                               c.startActivity(i);
+//                               break;
+//                           }
+//                           case "Hulk":
+//                           {
+//                               Intent i=new Intent(c, Demo.class);
+//                               i.putExtra("name",rc.getName());
+//                               i.putExtra("pic",rc.getImg());
+//                               i.putExtra("quote",rc.getQuote());
+//                               c.startActivity(i);
+//                               break;
+//                           }
+//                           case "Namor":
+//                           {
+//                               Intent i=new Intent(c, Demo.class);
+//                               i.putExtra("name",rc.getName());
+//                               i.putExtra("pic",rc.getImg());
+//                               i.putExtra("quote",rc.getQuote());
+//                               c.startActivity(i);
+//                               break;
+//                           }
+//                           case "SpiderMan":
+//                           {
+//                               Intent i=new Intent(c, Demo.class);
+//                               i.putExtra("name",rc.getName());
+//                               i.putExtra("pic",rc.getImg());
+//                               i.putExtra("quote",rc.getQuote());
+//                               c.startActivity(i);
+//                               break;
+//                           }
+//                           default:
+//                               break;
+//
+//
+//                       }
+//
+//                    }
                     }
                 });
+
             }
 
             @Override

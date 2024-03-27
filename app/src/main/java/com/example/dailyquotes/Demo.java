@@ -13,23 +13,24 @@ import com.example.dailyquotes.Quotes.FragQuote1;
 
 public class Demo extends AppCompatActivity {
     ImageView iv;
-    TextView tv;
+    TextView tv,quote;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo);
+        quote=findViewById(R.id.quote);
         Intent i=getIntent();
         String name=i.getStringExtra("name");
         int img=i.getIntExtra("pic",0);
+        String qoutes=i.getStringExtra("quote");
         iv=findViewById(R.id.image);
-        switch (name)
-        {
-            case "IronMan":
-            {
+        tv=findViewById(R.id.name);
+
                 iv.setImageResource(img);
-                break;
-            }
-        }
+                quote.setText(qoutes);
+                tv.setText(name);
+
+
     }
 }

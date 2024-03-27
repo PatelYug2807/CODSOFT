@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:fontFamily="serif-monospace"
-                android:text="@string/ironman1"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="30sp" />
         </LinearLayout>
@@ -77,30 +77,13 @@
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="40dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/sharebtn"
                 android:text="Share"
                 android:textStyle="bold"
 
                 android:fontFamily="@font/nothingfont"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/fav"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginRight="20dp"
-                android:layout_weight="1"
-                android:layout_gravity="bottom"
-                android:fontFamily="@font/nothingfont"
-                android:background="@drawable/sharebtn"
-                android:text=""
-                android:textStyle="bold"
-                android:drawableLeft="@drawable/favorite"
-                android:paddingLeft="10dp"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
         </LinearLayout>

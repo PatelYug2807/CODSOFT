@@ -56,7 +56,7 @@ public class FragQuote4 extends Fragment{
                 {
                     Toast.makeText(getContext(),"Added to Favorites",Toast.LENGTH_SHORT).show();
                     fav.setText("Remove");
-                    database.getReference().child("Fav").child(name.getText().toString()).setValue(new RCModel(R.drawable.namor,name.getText().toString()));
+                    database.getReference().child("Fav").child(name.getText().toString()).setValue(new RCModel(R.drawable.namor,name.getText().toString(),quote.getText().toString()));
                     count++;
                 }
                 //Removing from Fav
