@@ -18,7 +18,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/hulkImg"
                 android:layout_width="match_parent"
                 android:layout_height="234dp"
                 android:paddingBottom="2dp"
@@ -34,7 +34,7 @@
                 android:paddingRight="20dp">
 
                 <TextView
-                    android:id="@+id/Hulk"
+                    android:id="@+id/name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -70,21 +70,44 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="bottom"
-                android:layout_marginBottom="25dp"
+                android:orientation="horizontal"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
                 >
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/share"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sharebtn"
+                    android:text="Share"
+                    android:textStyle="bold"
+
+                    android:fontFamily="@font/nothingfont"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/fav"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="40dp"
                     android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/nothingfont"
                     android:background="@drawable/sharebtn"
-                    android:text="Share"
+                    android:text="favroites"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/favorite"
+                    android:paddingLeft="10dp"
                     android:textColor="@color/black"
-                    android:textSize="25sp" />
+                    android:textSize="15sp" />
             </LinearLayout>
 
         </LinearLayout>

@@ -1,6 +1,7 @@
 package com.example.dailyquotes;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,7 +39,51 @@ public  class AdapterRc extends RecyclerView.Adapter<AdapterRc.viewHolder>
                 holder.iv.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(v.getContext(),"Click",Toast.LENGTH_LONG).show();
+                       switch (rc.getName())
+                       {
+                           case "IronMan":
+                           {
+                               Intent i=new Intent(c, Demo.class);
+                               i.putExtra("name",rc.getName());
+                               i.putExtra("pic",rc.getImg());
+                               c.startActivity(i);
+                               break;
+
+                           }
+                           case "Captian America":
+                           {
+                               Intent i=new Intent(c, Demo.class);
+                               i.putExtra("name",rc.getName());
+                               c.startActivity(i);
+                               break;
+                           }
+                           case "Hulk":
+                           {
+                               Intent i=new Intent(c, Demo.class);
+                               i.putExtra("name",rc.getName());
+                               c.startActivity(i);
+                               break;
+                           }
+                           case "Namor":
+                           {
+                               Intent i=new Intent(c, Demo.class);
+                               i.putExtra("name",rc.getName());
+                               c.startActivity(i);
+                               break;
+                           }
+                           case "SpiderMan":
+                           {
+                               Intent i=new Intent(c, Demo.class);
+                               i.putExtra("name",rc.getName());
+                               c.startActivity(i);
+                               break;
+                           }
+                           default:
+                               break;
+
+
+                       }
+
                     }
                 });
             }

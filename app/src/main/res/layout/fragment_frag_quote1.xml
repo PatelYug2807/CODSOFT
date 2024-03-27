@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/actbg"
+    android:id="@+id/fargg1"
 android:layout_marginTop="56dp"
     tools:context=".Quotes.FragQuote1">
 
@@ -33,7 +34,7 @@ android:layout_marginTop="56dp"
                 android:paddingTop="10dp"
                 android:paddingRight="20dp">
                 <TextView
-                    android:id="@+id/IronMan"
+                    android:id="@+id/name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -57,7 +58,7 @@ android:layout_marginTop="56dp"
                     android:textSize="25sp" />
 
                 <TextView
-                    android:id="@+id/ironmanshare1"
+                    android:id="@+id/quote"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
@@ -101,7 +102,7 @@ android:layout_marginTop="56dp"
                     android:layout_gravity="bottom"
                     android:fontFamily="@font/nothingfont"
                     android:background="@drawable/sharebtn"
-                    android:text="favroites"
+                    android:text=""
                     android:textStyle="bold"
                     android:drawableLeft="@drawable/favorite"
                     android:paddingLeft="10dp"
