@@ -3,6 +3,11 @@ package com.example.dailyquotes;
 import androidx.fragment.app.Fragment;
 
 import com.example.dailyquotes.Quotes.FragQuote1;
+import com.example.dailyquotes.Quotes.FragQuote10;
+import com.example.dailyquotes.Quotes.FragQuote11;
+import com.example.dailyquotes.Quotes.FragQuote12;
+import com.example.dailyquotes.Quotes.FragQuote13;
+import com.example.dailyquotes.Quotes.FragQuote14;
 import com.example.dailyquotes.Quotes.FragQuote2;
 import com.example.dailyquotes.Quotes.FragQuote3;
 import com.example.dailyquotes.Quotes.FragQuote4;
@@ -30,6 +35,10 @@ public class RandomClass {
         fragmentList.add(new FragQuote8());
         fragmentList.add(new FragQuote9());
         fragmentList.add(new FragQuote10());
+        fragmentList.add(new FragQuote11());
+        fragmentList.add(new FragQuote12());
+        fragmentList.add(new FragQuote13());
+        fragmentList.add(new FragQuote14());
         Random rd = new Random();
         int randInd = rd.nextInt(fragmentList.size());
         return fragmentList.get(randInd);
