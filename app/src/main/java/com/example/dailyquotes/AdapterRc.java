@@ -48,6 +48,18 @@ public  class AdapterRc extends RecyclerView.Adapter<AdapterRc.viewHolder>
 //
                     }
                 });
+                holder.tv.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+//
+                        Intent i = new Intent(c, Demo.class);
+                        i.putExtra("name", rc.getName());
+                        i.putExtra("pic", rc.getImg());
+                        i.putExtra("quote", rc.getQuote());
+                        c.startActivity(i);
+//
+                    }
+                });
 
             }
 
