@@ -12,8 +12,12 @@
     <string name="aquaman1">One of the best lessons you can learn in life is to master how to remain calm </string>
     <string name="captian1">A single individual who has right heart and the right mind that is consumed by a single purpose.. That one man can win the war</string>
     <string name="spiderman">Sometimes to do what\'s right,we have to give up the things we want the most.Even our dreams</string>
-    <string name="blackpanther"></string>
+    <string name="blackpanther">Our lives begin to the end of the day we become silent about the things that matter</string>
     <string name="drstrange"> We don\'t get to choose our time.Death is what gives life meaning. To know your days are numbered</string>
+    <string name="thanos">You could not live with your own failure. But in life, failure is just a pit stop, guiding you back to your path with newfound wisdom and strength.</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 
 </resources>
