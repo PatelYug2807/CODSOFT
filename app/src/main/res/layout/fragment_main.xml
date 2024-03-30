@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+      >
+
+<!--       Too see the most important task-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="200dp"
+           android:background="@drawable/currenttasklayout"
+           android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/head"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="4dp"
+               android:textStyle="bold"
+               android:textSize="25sp"
+               android:textColor="@color/black"
+               android:text="" />
+
+       </LinearLayout>
+<!--       All other remaining tasks showed by the recycler view-->
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:background="@drawable/samplercbg">
+
+<!--           Recycler view-->
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               tools:listitem="@layout/samplerc">
+
+           </androidx.recyclerview.widget.RecyclerView>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+</FrameLayout>
