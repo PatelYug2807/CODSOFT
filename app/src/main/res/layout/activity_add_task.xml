@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#36454F "
     tools:context=".AddTask">
 
 <!--        Enter the name of the task-->
@@ -100,12 +101,15 @@
                 android:onClick="showTimePick"
                 />
 
-            <EditText
+            <TextView
                 android:id="@+id/timeEditText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:hint="Enter Time (HH:MM)"
-                android:inputType="time" />
+                android:gravity="left |center"
+                android:textSize="18dp"
+                android:inputType="time"
+                android:onClick="showTimePick"/>
         </LinearLayout>
 
 <!--        Enter the Date of task-->
@@ -126,23 +130,22 @@
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:text="Date- "
+                android:onClick="showDatePickerDialog"
 
                 />
 
-            <EditText
+            <TextView
                 android:id="@+id/daterTask"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:gravity="center |left"
+                android:textSize="18dp"
                 android:hint="Enter Date (YYYY-MM-DD)"
-                android:inputType="date" />
+                android:inputType="date"
 
-            <CheckBox
-                android:id="@+id/todarOrNot"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Today"/>
+                android:onClick="showDatePickerDialog"/>
+
 
         </LinearLayout>
 
@@ -175,6 +178,18 @@
 
 
 
-    </LinearLayout>
 
-</LinearLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/addbtnbg"
+        android:text="Add Task" />
+
+</RelativeLayout>
