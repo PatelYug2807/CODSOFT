@@ -97,7 +97,7 @@
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:text="Time- "
-
+                android:onClick="showTimePick"
                 />
 
             <EditText
@@ -136,6 +136,13 @@
                 android:layout_weight="1"
                 android:hint="Enter Date (YYYY-MM-DD)"
                 android:inputType="date" />
+
+            <CheckBox
+                android:id="@+id/todarOrNot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Today"/>
 
         </LinearLayout>
 
