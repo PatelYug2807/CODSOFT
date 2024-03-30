@@ -41,6 +41,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.constraintlayout)
     implementation(libs.navigation.fragment)
+    implementation ("com.google.code.gson:gson:2.8.8")
     implementation(libs.navigation.ui)
     implementation(libs.activity)
     implementation(libs.firebase.database)

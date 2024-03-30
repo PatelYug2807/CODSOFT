@@ -1,8 +1,10 @@
 package com.example.todo;
-
+import com.example.todo.MainActivity.*;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,8 +20,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.todo.R;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -36,6 +40,7 @@ public class AddTask extends AppCompatActivity {
     TextView gtTime,gtDate;
     Button submit;
     String priority;
+
 
 
     @Override
@@ -66,10 +71,11 @@ public class AddTask extends AppCompatActivity {
         });
 
         // Create a list of items to display
+
         List<String> items = new ArrayList<>();
         items.add("Default");
-        items.add("Top Order");
-        items.add("Most IMP");
+        items.add("TopOrder");
+        items.add("MostIMP");
         // Add more items as needed...
 
         // Create an ArrayAdapter to populate the Spinner
@@ -167,19 +173,17 @@ public class AddTask extends AppCompatActivity {
                         }
                     }
 
-                    // Proceed with your logic if date and time are valid
-                    Log.e("data", "Name- " + name + " description- " + description + " date- " + date + " time- " + time + " priority- " + priority);
+
                 } else {
                     // Invalid date or time format, show error message or handle it accordingly
                     Toast.makeText(getApplicationContext(), "Invalid date or time format", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
+                //Creating the list of Task and add to it
 
 
-                List<RCModel> task = new ArrayList<>();
-
-
+                saveData(name,description,time,date,priority);
                 // Printing all things to log
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
 
@@ -234,6 +238,30 @@ public class AddTask extends AppCompatActivity {
                 }, year, month, dayOfMonth);
 
         datePickerDialog.show();
+    }
+    public ArrayList<RCModel> getData() {
+        ArrayList<RCModel> arr = new ArrayList<>();
+        SharedPreferences preferences = getApplicationContext().getSharedPreferences("list", Context.MODE_PRIVATE);
+        Gson gson = new Gson();
+        String json = preferences.getString("list1", null);
+        if (json != null) {
+            Type type = new TypeToken<ArrayList<RCModel>>() {}.getType();
+            arr = gson.fromJson(json, type);
+        }
+        Log.e("data","ffgf");
+        return arr;
+    }
+    public void saveData(String taskName,String taskDescription,String time,String date,String priority)
+    {
+        ArrayList<RCModel> arr = getData();
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("list", MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        Gson gson=new Gson();
+        arr.add(new RCModel(taskName,taskDescription,time,date,priority));
+        String json=gson.toJson(arr);
+        editor.putString("list1",json);
+        editor.apply();
+        Log.e("data","calle");
     }
 
 }
