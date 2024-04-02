@@ -3,8 +3,143 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".questions.Quiz1">
+    tools:context=".questions.Quiz1"
+    android:background="#242A40">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/QueNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:paddingLeft="10dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/QueName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1011"
+                    android:paddingLeft="10dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"
+
+                    android:text="@string/sci1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGrp"
+                    android:layout_margin="10dp">
+
+                    <RadioButton
+                        android:id="@+id/optionA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/quebg"
+                        android:button="@drawable/aa"
+                        android:paddingLeft="10dp"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Sir Isaac Newton"/>
+
+                    <RadioButton
+                        android:id="@+id/optionB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/quebg"
+                        android:button="@drawable/bb"
+                        android:layout_marginTop="30dp"
+                        android:paddingLeft="10dp"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Thomas Alva Edison"/>
+
+                    <RadioButton
+                        android:id="@+id/optionC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/quebg"
+                        android:button="@drawable/cc"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Galileo Galilei"/>
+
+                    <RadioButton
+                        android:id="@+id/optionD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/quebg"
+                        android:button="@drawable/dd"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Nicolaus Copernicus"/>
+
+
+                </RadioGroup>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:layout_marginBottom="30dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/previous"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Previous"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Next"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 
 
 </FrameLayout>

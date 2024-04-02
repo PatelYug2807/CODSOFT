@@ -3,4 +3,21 @@
     <string name="splash">The quiz contains 10 MCQ\'s Answer would be shown at last</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sci1">The concept of gravity was discovered by which famous physicist?</string>
+    <string name="sc2">Which is the most abundant element in the universe?</string>
+    <string name="sc3">What is the heaviest organ in the human body?</string>
+    <string name="sc4">Which blood type is the rarest in humans?</string>
+    <string name="sc5">How many bones are in the human body?</string>
+    <string name="sc6">What is the only planet that spins clockwise?</string>
+    <string name="sc7"> What is the biggest planet in our solar system?</string>
+    <!--    <string name="sc8"></string>-->
+    <!--    <string name="sc9"></string>-->
+    <!--    <string name="sc10"></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+
+
 </resources>
